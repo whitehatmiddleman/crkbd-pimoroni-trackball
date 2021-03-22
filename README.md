@@ -21,6 +21,8 @@ I won't go over the details of the crkbd base build there is a lot of youtube cl
 
 The only thing special is I used the sparkfun pro micro usb-c controller and qwiic port to connect the pimoroni trackball, shown below.
 
+
+### Qwiic Connection
 Pimoroni Trackball with qwiic connection:
 ![alt trackball-qwiic][trackball-qwiic]
 
@@ -37,7 +39,19 @@ Right Hand Master:
 ## QMK firmware
 I'm in no means a pro C/C++ developer and I'm sure once you see the code you could probably find improvements, but most of the development was originally from [foureight84](https://github.com/foureight84/qmk_firmware/tree/sofle_foureight84/keyboards/sofle/keymaps/foureight84) and [sevanteri](https://github.com/sevanteri/qmk_firmware/tree/master/users/sevanteri).
 
-Currently the common crkbd doesn't support i2c for the slip keyboard communication, so I had to build the firmware similar to [vlukash](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd/keymaps) trackpad by having a firmware for the right and left controllers.
+Currently the common crkbd doesn't support i2c for the slip keyboard communication, so I had to build the firmware similar to [vlukash](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd/keymaps) trackpad approach by having a firmware for the right and left controllers. Basically the master keyboard, the one that has the usb connected, will have the working code for the pimoroni trackball. So you have to explicitly say which on is the master and enable the pimoroni trackball for that side only. The firmware does not include the OLED driver mainly because I haven't tested it yet. The LED in the trackball will change indicating which layer you are currently at.
+
+Clone my firmware here:
+[https://github.com/greyhatmiddleman/qmk_firmware.git](https://github.com/greyhatmiddleman/qmk_firmware.git)
+
+```
+git clone --branch greyhatmiddleman https://github.com/greyhatmiddleman/qmk_firmware.git
+```
+
+The firmware is located in ```keyboards/crkbd/rev1/common/keymaps/greyhatmiddleman_trackball_[left|right]```.
+
+### Firmware Customization
+
 
 
 
