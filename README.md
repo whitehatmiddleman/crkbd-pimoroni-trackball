@@ -39,7 +39,9 @@ Right Hand Master:
 ## QMK firmware
 I'm in no means a pro C/C++ developer and I'm sure once you see the code you could probably find improvements, but most of the development was originally from [foureight84](https://github.com/foureight84/qmk_firmware/tree/sofle_foureight84/keyboards/sofle/keymaps/foureight84), [drashna](https://github.com/drashna) and [sevanteri](https://github.com/sevanteri/qmk_firmware/tree/master/users/sevanteri).
 
-Currently the common crkbd doesn't support i2c for the slip keyboard communication, so I had to build the firmware similar to [vlukash](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd/keymaps) trackpad approach by having a firmware for the right and left controllers. Basically the master keyboard, the one that has the usb connected, will have the working code for the pimoroni trackball. So you have to explicitly say which on is the master and enable the pimoroni trackball for that side only. The firmware does not include the OLED driver mainly because I haven't tested it yet. The LED in the trackball will change indicating which layer you are currently at.
+Currently the common crkbd doesn't support i2c for the split keyboard communication, so I had to build the firmware similar to [vlukash](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd/keymaps) trackpad approach by having a firmware for the right and left controllers. Basically the master hand, the one that has the usb connected, will have the working code for the pimoroni trackball. So you have to explicitly say which is the master and enable the pimoroni trackball for that side only.
+
+The firmware does not include the OLED driver mainly because I haven't tested it yet. The LED in the trackball will change indicating which layer you are currently at.
 
 Clone my firmware here:
 [https://github.com/greyhatmiddleman/qmk_firmware.git](https://github.com/greyhatmiddleman/qmk_firmware.git)
@@ -90,7 +92,7 @@ Next connect the usb to the left hand controller and run the following:
 qmk flash -kb crkbd/rev1/common -km greyhatmiddleman_trackball_left
 ```
 
-You should be all set!
+Connect the usb to the right hand and your computer and you should be all set!
 
 
 ## Troubleshooting
@@ -101,7 +103,8 @@ You should be all set!
 
 ## Future Improvements
 - Convert the controllers using the Nice!Nano ones for wireless connectivity
-- Add an OLED on the opposite side of trackball
+- Add an OLED on the opposite side of the trackball
+- Try to get EE_HAND working so that we can have a single firmware
 
 
 
