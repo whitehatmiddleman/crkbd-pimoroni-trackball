@@ -19,7 +19,19 @@ This was inspired by [foureight84](https://github.com/foureight84/sofle-keyboard
 ## Build
 I won't go over the details of the crkbd base build there is a lot of youtube clips and the orginal [foostan](https://github.com/foostan/crkbd) build is detailed.
 
-The only thing special is I used the sparkfun pro micro usb-c controller to use the qwiic connection to get the pimoroni trackball connected. As show here:
+The only thing special is I used the sparkfun pro micro usb-c controller and qwiic port to connect the pimoroni trackball, shown below.
+
+Pimoroni Trackball with qwiic connection:
+![alt trackball-qwiic][trackball-qwiic]
+
+Trackball connected to the controller:
+![alt controller-with-trackball-qwiic][controller-with-trackball-qwiic]
+
+Controller connected to the board:
+![alt connection][connection]
+
+Right Hand Master:
+![alt right-hand-master][right-hand-master]
 
 
 ## QMK firmware
