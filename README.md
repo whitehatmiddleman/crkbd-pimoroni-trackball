@@ -76,7 +76,7 @@ Here you want to make sure the following:
  PIMORONI_TRACKBALL_ENABLE = no
  ...
  ```
- - Verify all your changes and confirm that the ```config.h``` and ```keymap.c``` are the same.
+ - Verify all your changes and confirm that the ```config.h``` and ```keymap.c``` are the same in the right and left holders.
  - Now you ready to flash the firmware.
 
 ### Flashing Firmware
@@ -89,6 +89,20 @@ Next connect the usb to the left hand controller and run the following:
 ```
 qmk flash -kb crkbd/rev1/common -km greyhatmiddleman_trackball_left
 ```
+
+You should be all set!
+
+
+## Troubleshooting
+- Confirm that the ```config.h``` and ```keymap.c``` are the same under the right and left folders.
+- Ensure that you connected the trackball to the master hand, which would be defined under the ```config.h```
+- The ```rules.mk``` should be different between the right and left folders. It should dictate which has the Pimoroni enabled which the other side should have it disabled.
+
+
+## Future Improvements
+- Convert the controllers using the Nice!Nano ones for wireless connectivity
+- Add an OLED on the opposite side of trackball
+
 
 
 [connection]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/connection.jpg
