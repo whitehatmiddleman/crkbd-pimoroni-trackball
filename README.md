@@ -64,13 +64,13 @@ Here you want to make sure the following:
 ```
 - Change your keymaps accordingly, no need to change the code under ```pointing_device_task```, unless you added layers or change the names of the layers.
 - Set the ```rules.mk``` based on the which hand is master and that has the trackball connected.
- -- For the __right hand__ ```rules.mk``` set the following:
+ - For the __right hand__ ```rules.mk``` set the following:
  ```
  ...
  PIMORONI_TRACKBALL_ENABLE = yes
  ...
  ```
- -- For the __left hand__ ```rules.mk``` set the following:
+ - For the __left hand__ ```rules.mk``` set the following:
  ```
  ...
  PIMORONI_TRACKBALL_ENABLE = no
