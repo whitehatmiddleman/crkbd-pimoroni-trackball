@@ -51,11 +51,11 @@ git clone --branch greyhatmiddleman https://github.com/greyhatmiddleman/qmk_firm
 The firmware is located in ```keyboards/crkbd/rev1/common/keymaps/greyhatmiddleman_trackball_[left|right]```.
 
 ### Firmware Customization
-For this example the trackball will be connected to the right hand which will considered the master side.
+For this example the trackball will be connected to the right hand which will be the master side.
 
 Here you want to make sure the following:
 
-- __Important__: Make sure that both the ```config.h``` and ```keymap.c``` are identical.
+- __Important__: Make sure that both the ```config.h``` and ```keymap.c``` are identical under the right and left folders
 - In the ```config.h``` file make sure to define the master:
 ```
 ...
@@ -63,31 +63,32 @@ Here you want to make sure the following:
 ...
 ```
 - Change your keymaps accordingly, no need to change the code under ```pointing_device_task```, unless you added layers or change the names of the layers.
-- Now to set the ```rules.mk``` based on the which hand is master.
- - For the right hand ```rules.mk``` set the following:
+- Set the ```rules.mk``` based on the which hand is master and that has the trackball connected.
+ - For the __right hand__ ```rules.mk``` set the following:
  ```
  ...
  PIMORONI_TRACKBALL_ENABLE = yes
  ...
  ```
- - For the left hand ```rules.mk``` set the following:
+ - For the __left hand__ ```rules.mk``` set the following:
  ```
  ...
  PIMORONI_TRACKBALL_ENABLE = no
  ...
  ```
+ - Verify all your changes and confirm that the ```config.h``` and ```keymap.c``` are the same.
+ - Now you ready to flash the firmware.
 
-
-
-
-```
-qmk flash -kb crkbd/rev1/common -km greyhatmiddleman_trackball_left
-```
-
+### Flashing Firmware
+Connect the usb to right hand controller and run the following:
 ```
 qmk flash -kb crkbd/rev1/common -km greyhatmiddleman_trackball_right
 ```
 
+Next connect the usb to the left hand controller and run the following:
+```
+qmk flash -kb crkbd/rev1/common -km greyhatmiddleman_trackball_left
+```
 
 
 [connection]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/connection.jpg
