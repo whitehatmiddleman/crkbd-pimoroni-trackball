@@ -19,7 +19,7 @@ This was inspired by [foureight84](https://github.com/foureight84/sofle-keyboard
 ## Build
 I won't go over the details of the crkbd base build there is a lot of youtube clips and the orginal [foostan](https://github.com/foostan/crkbd) build is detailed.
 
-The only thing special is I used the sparkfun pro micro usb-c controller and qwiic port to connect the pimoroni trackball, shown below.
+Instead of using the standard pro micro, I used the sparkfun pro micro usb-c controller and qwiic port to connect the pimoroni trackball as shown below.
 
 
 ### Qwiic Connection
@@ -94,6 +94,8 @@ qmk flash -kb crkbd/rev1/common -km greyhatmiddleman_trackball_left
 
 Connect the usb to the right hand and your computer and you should be all set!
 
+## Features
+- OLED support added thanks to the help of drasha's transport.
 
 ## Troubleshooting
 - Confirm that the ```config.h``` and ```keymap.c``` are the same under the right and left folders.
@@ -103,7 +105,7 @@ Connect the usb to the right hand and your computer and you should be all set!
 
 ## Future Improvements
 - Convert the controllers using the Nice!Nano ones for wireless connectivity
-- Add an OLED on the opposite side of the trackball
+- ~~Add an OLED on the opposite side of the trackball~~
 - Try to get EE_HAND working so that we can have a single firmware
 
 <!--
