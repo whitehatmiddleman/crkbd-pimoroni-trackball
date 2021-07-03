@@ -94,6 +94,15 @@ qmk flash -kb crkbd/rev1/common -km greyhatmiddleman_trackball_left
 
 Connect the usb to the right hand and your computer and you should be all set!
 
+
+## Using the Sparkfun pro micro USB-C controllers
+When using the sparkfun pro micro usb-c controllers you will need to break the VCC bridge on the back of slave/left hand controller. As shown in the image below.
+![alt left and right hand controllers][left-right-controllers]
+
+When you need to update the firmware on the slave/left hand controller, you will need to jump the 5v and RAW pins prior to connecting the usb cable.
+
+Remember to load the firmware on these sparkfun controllers, you need to press the reset button twice. Refer to sparkfuns documentation for more details.
+
 ## Features
 - OLED support added thanks to the help of drasha's transport.
 
@@ -122,3 +131,4 @@ Connect the usb to the right hand and your computer and you should be all set!
 [fullview]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/fullview.jpg
 [right-hand-master]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/right-hand-master.jpg
 [trackball-qwiic]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/trackball-qwiic.jpg
+[left-right-controllers]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/left-right-controllers.jpg
