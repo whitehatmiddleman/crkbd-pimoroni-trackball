@@ -13,8 +13,7 @@ This was inspired by [foureight84](https://github.com/foureight84/sofle-keyboard
 - [kailh choc low profile switches (brown)](https://www.littlekeyboards.com/collections/keyboard-switches/products/kailh-choc-low-profile-switches)
 - [mill max ultra lowprofile sockets](https://www.littlekeyboards.com/collections/miscellaneous/products/mill-max-ultra-low-profile-sockets)
 - [sparkfun pro micro usb-c](https://www.sparkfun.com/products/15795)
- - If you are a beginner, please use the standard pro micro controllers.
- - [Pro Micro](https://www.littlekeyboards.com/collections/mcus/products/pro-micro-black)
+ - If you are a beginner, please use the standard pro micro controllers. [Pro Micro](https://www.littlekeyboards.com/collections/mcus/products/pro-micro-black)
 - [pimoroni trackball](https://shop.pimoroni.com/products/trackball-breakout)
 
 
