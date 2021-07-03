@@ -13,6 +13,8 @@ This was inspired by [foureight84](https://github.com/foureight84/sofle-keyboard
 - [kailh choc low profile switches (brown)](https://www.littlekeyboards.com/collections/keyboard-switches/products/kailh-choc-low-profile-switches)
 - [mill max ultra lowprofile sockets](https://www.littlekeyboards.com/collections/miscellaneous/products/mill-max-ultra-low-profile-sockets)
 - [sparkfun pro micro usb-c](https://www.sparkfun.com/products/15795)
+ - If you are a beginner, please use the standard pro micro controllers.
+ - [Pro Micro](https://www.littlekeyboards.com/collections/mcus/products/pro-micro-black)
 - [pimoroni trackball](https://shop.pimoroni.com/products/trackball-breakout)
 
 
@@ -107,10 +109,10 @@ Remember to load the firmware on these sparkfun controllers, you need to press t
 - OLED support added thanks to the help of drasha's transport.
 
 ## Troubleshooting
+- You might want to use the standard pro micro controllers rather than the sparkfun pro micro usb-c ones. There are some differences with the controllers and it will not follow some of the standard documentations.
 - Confirm that the ```config.h``` and ```keymap.c``` are the same under the right and left folders.
 - Ensure that you connected the trackball to the master hand, which would be defined under the ```config.h```
 - The ```rules.mk``` should be different between the right and left folders. It should dictate which has the Pimoroni enabled which the other side should have it disabled.
-
 
 ## Future Improvements
 - Convert the controllers using the Nice!Nano ones for wireless connectivity
