@@ -18,7 +18,7 @@ This was inspired by [foureight84](https://github.com/foureight84/sofle-keyboard
 
 
 ## Build
-I won't go over the details of the crkbd base build there is a lot of youtube clips and the orginal [foostan](https://github.com/foostan/crkbd) build is detailed.
+I won't go over the details of the crkbd base build there is a lot of youtube clips and the orginal [foostan](https://github.com/foostan/crkbd) build is already detailed.
 
 Instead of using the standard pro micro, I used the sparkfun pro micro usb-c controller and qwiic port to connect the pimoroni trackball as shown below.
 
@@ -93,7 +93,7 @@ Next connect the usb to the left hand controller and run the following:
 qmk flash -kb crkbd/rev1/common -km greyhatmiddleman_trackball_left
 ```
 
-Connect the usb to the right hand and your computer and you should be all set!
+Connect the usb to the right hand controller then to your computer and you should be all set!
 
 
 ## Using the Sparkfun pro micro USB-C controllers
