@@ -51,7 +51,9 @@ Clone my firmware here:
 git clone --branch greyhatmiddleman https://github.com/greyhatmiddleman/qmk_firmware.git
 ```
 
-The firmware is located in ```keyboards/crkbd/rev1/common/keymaps/greyhatmiddleman_trackball_[left|right]```.
+~~The firmware is located in ```keyboards/crkbd/rev1/common/keymaps/greyhatmiddleman_trackball_[left|right]```.~~
+The firmware is located in ```keyboards/crkbd/keymaps/greyhatmiddleman_trackball_[left|right]```.
+
 
 ### Firmware Customization
 For this example the trackball will be connected to the right hand which will be the master side.
@@ -85,12 +87,12 @@ Here you want to make sure the following:
 ### Flashing Firmware
 Connect the usb to right hand controller and run the following:
 ```
-qmk flash -kb crkbd/rev1/common -km greyhatmiddleman_trackball_right
+qmk flash -kb crkbd -km greyhatmiddleman_trackball_right
 ```
 
 Next connect the usb to the left hand controller and run the following:
 ```
-qmk flash -kb crkbd/rev1/common -km greyhatmiddleman_trackball_left
+qmk flash -kb crkbd -km greyhatmiddleman_trackball_left
 ```
 
 Connect the usb to the right hand controller then to your computer and you should be all set!
