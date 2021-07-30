@@ -52,6 +52,7 @@ git clone --branch greyhatmiddleman https://github.com/greyhatmiddleman/qmk_firm
 ```
 
 ~~The firmware is located in ```keyboards/crkbd/rev1/common/keymaps/greyhatmiddleman_trackball_[left|right]```.~~
+
 The firmware is located in ```keyboards/crkbd/keymaps/greyhatmiddleman_trackball_[left|right]```.
 
 
