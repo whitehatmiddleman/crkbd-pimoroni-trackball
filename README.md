@@ -108,7 +108,7 @@ When you need to update the firmware on the slave/left hand controller, you will
 Remember to load the firmware on these sparkfun controllers, you need to press the reset button twice. Refer to sparkfuns documentation for more details.
 
 ## Features
-- OLED support added thanks to the help of drasha's transport.
+Needs to be fixed - OLED support added thanks to the help of drasha's transport.
 
 ## Troubleshooting
 - You might want to use the standard pro micro controllers rather than the sparkfun pro micro usb-c ones. There are some differences with the controllers and it will not follow some of the standard documentations.
@@ -118,7 +118,7 @@ Remember to load the firmware on these sparkfun controllers, you need to press t
 
 ## Future Improvements
 - Convert the controllers using the Nice!Nano ones for wireless connectivity
-- ~~Add an OLED on the opposite side of the trackball~~
+- Add an OLED on the opposite side of the trackball
 - Try to get EE_HAND working so that we can have a single firmware
 
 <!--
