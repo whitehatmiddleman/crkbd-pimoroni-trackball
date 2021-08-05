@@ -108,7 +108,10 @@ When you need to update the firmware on the slave/left hand controller, you will
 Remember to load the firmware on these sparkfun controllers, you need to press the reset button twice. Refer to sparkfuns documentation for more details.
 
 ## Features
-Needs to be fixed - OLED support added thanks to the help of drasha's transport.
+- Keymaps now reference a Userspace to source a the pimoroni code.
+- While holding the NAV layer, the pointer will accelerate a bit faster. Useful for large resolution displays.
+- While holding the SYM layer, the trackball will act as a scroll wheel.
+- Needs to be fixed - OLED support added thanks to the help of drasha's transport.
 
 ## Troubleshooting
 - You might want to use the standard pro micro controllers rather than the sparkfun pro micro usb-c ones. There are some differences with the controllers and it will not follow some of the standard documentations.
