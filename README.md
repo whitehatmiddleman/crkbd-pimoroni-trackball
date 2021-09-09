@@ -107,6 +107,9 @@ When you need to update the firmware on the slave/left hand controller, you will
 
 Remember to load the firmware on these sparkfun controllers, you need to press the reset button twice. Refer to sparkfuns documentation for more details.
 
+I found this article when troubleshooting the sparkfun controllers:
+[Only one half of my keyboard works at a time, but not when they are both connected](https://docs.splitkb.com/hc/en-us/articles/360010588860-Only-one-half-of-my-keyboard-works-at-a-time-but-not-when-they-are-both-connected)
+
 ## Features
 - Keymaps now reference a Userspace to source a the pimoroni code.
 - While holding the NAV layer, the pointer will accelerate a bit faster. Useful for large resolution displays.
