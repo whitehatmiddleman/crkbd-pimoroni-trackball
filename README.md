@@ -68,7 +68,7 @@ Here you want to make sure the following:
 #define MASTER_RIGHT
 ...
 ```
-- Change your keymaps accordingly, no need to change the code under ```pointing_device_task```, unless you added layers or change the names of the layers.
+- Change your keymaps accordingly and update any layer state switch cases accordingly.
 - Set the ```rules.mk``` based on the which hand is master and that has the trackball connected.
  - For the __right hand__ ```rules.mk``` set the following:
  ```
@@ -111,10 +111,11 @@ I found this article when troubleshooting the sparkfun controllers:
 [Only one half of my keyboard works at a time, but not when they are both connected](https://docs.splitkb.com/hc/en-us/articles/360010588860-Only-one-half-of-my-keyboard-works-at-a-time-but-not-when-they-are-both-connected)
 
 ## Features
-- Keymaps now reference a Userspace to source a the pimoroni code.
-- While holding the NAV layer, the pointer will accelerate a bit faster. Useful for large resolution displays.
-- While holding the SYM layer, the trackball will act as a scroll wheel.
-- Needs to be fixed - OLED support added thanks to the help of drasha's transport.
+- Pimoroni Trackball reference core source code located in the drivers/sensor path
+- OLED enabled by default, must have OLEDs on both sides.
+- Added keycodes
+ - BALL_LC: Mouse left click
+ - BALL_SCR: While held down mouse will act as a vertical scroll wheel
 
 ## Troubleshooting
 - You might want to use the standard pro micro controllers rather than the sparkfun pro micro usb-c ones. There are some differences with the controllers and it will not follow some of the standard documentations.
