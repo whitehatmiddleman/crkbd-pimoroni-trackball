@@ -113,9 +113,8 @@ I found this article when troubleshooting the sparkfun controllers:
 ## Features
 - Pimoroni Trackball reference core source code located in the drivers/sensor path
 - OLED enabled by default, must have OLEDs on both sides.
-- Added keycodes
- - BALL_LC: Mouse left click
- - BALL_SCR: While held down mouse will act as a vertical scroll wheel
+- Added keycode BALL_LC: Mouse left click
+- Added keycode BALL_SCR: While held down mouse will act as a vertical scroll wheel
 
 ## Troubleshooting
 - You might want to use the standard pro micro controllers rather than the sparkfun pro micro usb-c ones. There are some differences with the controllers and it will not follow some of the standard documentations.
