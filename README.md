@@ -127,13 +127,13 @@ I found this article when troubleshooting the sparkfun controllers:
 - Add an OLED on the opposite side of the trackball
 - Try to get EE_HAND working so that we can have a single firmware
 
-<!--
+<!-- -->
 <div>
 <blank>
 <a href="https://www.buymeacoffee.com/whmiddleman" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 </blank>
 </div>
--->
+<-- -->
 
 
 [connection]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/connection.jpg
