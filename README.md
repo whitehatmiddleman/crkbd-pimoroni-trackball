@@ -110,6 +110,12 @@ Remember to load the firmware on these sparkfun controllers, you need to press t
 I found this article when troubleshooting the sparkfun controllers:
 [Only one half of my keyboard works at a time, but not when they are both connected](https://docs.splitkb.com/hc/en-us/articles/360010588860-Only-one-half-of-my-keyboard-works-at-a-time-but-not-when-they-are-both-connected)
 
+### Adding switch
+If you are able to find this switch, you can solder a switch on the VCC bridge connector. After breaking the default 5v bridge to VCC, solder the switch pins to 5v and VCC, so that when the switch is on 5v is connected to VCC and off 5v is disconnected from VCC. No connection is needed for the 3v pad.
+
+![alt sparkfun-with-switch][sparkfun-with-switch]
+
+
 ## Features
 - Pimoroni Trackball reference core source code located in the drivers/sensor path
 - OLED enabled by default, must have OLEDs on both sides.
@@ -142,3 +148,4 @@ I found this article when troubleshooting the sparkfun controllers:
 [right-hand-master]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/right-hand-master.jpg
 [trackball-qwiic]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/trackball-qwiic.jpg
 [left-right-controllers]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/left-right-controllers.jpg
+[sparkfun-with-switch]: https://raw.githubusercontent.com/greyhatmiddleman/crkbd-pimoroni-trackball/main/images/sparkfun-with-switch.jpg
